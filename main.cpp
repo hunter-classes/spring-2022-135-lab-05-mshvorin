@@ -13,24 +13,24 @@ int main() {
 	
 	bool y = isPrime(11232);
 	if (y == 1) {
-	cout << "Da is Prime." << endl;
+	cout << "Yes is Prime." << endl;
 	}
 	else if (y == 0) {
-	cout << "Nyet is not Prime." << endl;
+	cout << "No is not Prime." << endl;
 	}
 	
 	int z = nextPrime(17);
 	cout << z << " is the next prime." << endl;
 	
-	int v = countPrimes(10,20);
+	int v = countPrimes(5,12);
 	cout << v << " is the amount of primes in the range." << endl;
 	
 	bool g = isTwinPrime(11);
 	if (x == 1) {
-	cout << "Yep is twin prime." << endl;
+	cout << "Yes is twin prime." << endl;
 	}
 	else if (x == 0) {
-	cout << "Nah is not twin prime." << endl;
+	cout << "No is not twin prime." << endl;
 	}
 	
 	int f = nextTwinPrime(19);

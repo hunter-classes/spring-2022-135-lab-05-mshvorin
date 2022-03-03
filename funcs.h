@@ -1,5 +1,5 @@
 #pragma once
-#include "funcs.cpp"
+
 // add prototypes here
 bool isDivisibleBy(int n, int d);
 bool isPrime(int n);

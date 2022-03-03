@@ -1,5 +1,6 @@
 #include <iostream>
 #include "funcs.h"
+
 using namespace std;
 // add functions here
 bool isDivisibleBy(int n, int d) {
@@ -12,7 +13,7 @@ bool isDivisibleBy(int n, int d) {
 }
 
 bool isPrime(int n){
-	if (n % 2 != 0 && n % 3 != 0 && n % 4 != 0 && n % 5 != 0 && n % 6 != 0 && n % 7 != 0 && n % 8 != 0 && n % 9 != 0 ) {
+	if (n % 2 != 0 && n % 3 != 0 && n % 4 != 0 && n % 5 != 0 && n % 6 != 0 && n % 7 != 0 && n % 8 != 0 && n % 9 != 0 || n==2 || n==3 || n==5 || n==7) {
 	return true;
 	}
 	else {
@@ -31,14 +32,13 @@ int nextPrime(int n) {
 int countPrimes(int a, int b) {
 	int count = 0;
 	while (a <= b) {
-		if (a % 2 != 0 && a % 3 != 0 && a % 4 != 0 && a % 5 != 0 && a % 6 != 0 && a % 7 != 0 && a % 8 != 0 && a % 9 != 0 ) {
+		if (a % 2 != 0 && a % 3 != 0 && a % 4 != 0 && a % 5 != 0 && a % 6 != 0 && a % 7 != 0 && a % 8 != 0 && a % 9 != 0 || a==2 || a==3 || a==5 || a==7) {
 		count++;
 		a++;
 		}
 		else {
 		a++;
 		}
-	
 	}
 	return count;
 }
@@ -59,7 +59,7 @@ int nextTwinPrime(int n){
 	}
 	return n;
 	}
-	
+		
 int largestTwinPrime(int n, int b) {
 	int largest;
 	while (n <= b) {
